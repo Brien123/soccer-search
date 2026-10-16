@@ -11,3 +11,4 @@ wheels/
 
 # Local StatsBomb data (large, machine-specific)
 statsbomb-rag-data/
+.env
