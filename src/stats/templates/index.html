@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>StatsBomb Search</title>
+<link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+<header class="topbar">
+<div class="brand">StatsBomb Search</div>
+<div class="rag-flag" id="ragFlag">keyword search · RAG-ready</div>
+</header>
+<main class="container">
+<section class="search-card">
+<form id="searchForm" class="form-grid">
+<input id="q" name="q" type="text" placeholder="Try: shot with high xG, dribble, clearance..." autocomplete="off" />
+<input id="team" name="team" type="text" placeholder="Team (exact)" />
+<input id="player" name="player" type="text" placeholder="Player (exact)" />
+<input id="match_id" name="match_id" type="text" placeholder="Match ID" />
+<input id="minute_from" name="minute_from" type="number" min="0" max="200" placeholder="Min from" />
+<input id="minute_to" name="minute_to" type="number" min="0" max="200" placeholder="Min to" />
+<select id="size" name="size">
+<option value="5">5 results</option>
+<option value="10" selected>10 results</option>
+<option value="20">20 results</option>
+<option value="50">50 results</option>
+</select>
+<button type="submit" id="searchBtn">Search</button>
+</form>
+<div class="hint">Normal keyword search over event narratives. Vector / RAG mode is stubbed in the API for later.</div>
+</section>
+<section class="status-row">
+<div id="status">Ready.</div>
+<div id="total"></div>
+</section>
+<section id="results" class="results"></section>
+<div class="pager">
+<button id="prevBtn" type="button">Prev</button>
+<button id="nextBtn" type="button">Next</button>
+</div>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

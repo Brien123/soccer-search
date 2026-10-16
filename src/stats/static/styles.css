@@ -1,0 +1,101 @@
+:root {
+  color-scheme: light dark;
+  --bg: #0f172a;
+  --card: #ffffff;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --accent: #2563eb;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, Arial, sans-serif;
+  background: #f1f5f9;
+  color: var(--ink);
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: var(--bg);
+  color: white;
+}
+.brand { font-weight: 700; font-size: 18px; }
+.rag-flag {
+  font-size: 12px;
+  border: 1px solid #334155;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: #cbd5e1;
+}
+.container { max-width: 960px; margin: 0 auto; padding: 20px; }
+.search-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 10px;
+}
+.form-grid input, .form-grid select {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: 14px;
+}
+.form-grid button {
+  grid-column: 1 / -1;
+  padding: 12px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.hint { margin-top: 10px; color: var(--muted); font-size: 13px; }
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 2px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.results { display: grid; gap: 10px; }
+.card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+.card-top {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 8px;
+  background: #f8fafc;
+}
+.narrative { font-size: 15px; line-height: 1.45; }
+.score { color: var(--muted); font-size: 12px; margin-top: 6px; }
+.pager { display: flex; gap: 10px; margin: 16px 0 40px; }
+.pager button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: white;
+  cursor: pointer;
+}
