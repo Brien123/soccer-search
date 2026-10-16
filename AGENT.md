@@ -1,0 +1,6 @@
+- no comments
+- every use modern day python 14 types. methods etc.
+- follow the rules in uv for ruff
+- every method should have return types, parameters should all have types
+- follow oop: each file should have only one and only one class.
+- follow dependency injection
