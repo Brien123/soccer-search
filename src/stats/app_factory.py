@@ -8,6 +8,10 @@ from fastapi.templating import Jinja2Templates
 from stats.config import AppConfig
 from stats.elasticsearch_provider import ElasticsearchProvider
 from stats.embedding_provider import EmbeddingProvider
+from stats.llm_provider import LlmProvider
+from stats.rag_request import RagRequest
+from stats.rag_response import RagResponse
+from stats.rag_service import RagService
 from stats.search_query import SearchQuery
 from stats.search_response import SearchResponse
 from stats.search_service import SearchService
@@ -20,6 +24,8 @@ class AppFactory:
         provider: ElasticsearchProvider = ElasticsearchProvider(effective_config)
         embeddings: EmbeddingProvider = EmbeddingProvider(effective_config)
         service: SearchService = SearchService(provider, embeddings)
+        llm: LlmProvider = LlmProvider(effective_config)
+        rag: RagService = RagService(service, embeddings, llm, effective_config)
         base_dir: Path = Path(__file__).resolve().parent
         templates: Jinja2Templates = Jinja2Templates(
             directory=str(base_dir / "templates")
@@ -31,6 +37,9 @@ class AppFactory:
 
         def get_config() -> AppConfig:
             return effective_config
+
+        def get_rag() -> RagService:
+            return rag
 
         app.mount(
             "/static",
@@ -72,5 +81,11 @@ class AppFactory:
                 mode="keyword",
             )
             return svc.search(query)
+
+        @app.post("/api/rag")
+        def api_rag(
+            request: RagRequest, rag_svc: RagService = Depends(get_rag)
+        ) -> RagResponse:
+            return rag_svc.ask(request)
 
         return app

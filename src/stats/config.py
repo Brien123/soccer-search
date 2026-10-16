@@ -12,5 +12,6 @@ class AppConfig(BaseSettings):
     index_name: str = "statsbomb_events"
     default_size: int = 10
     max_size: int = 50
-    rag_enabled: bool = False
     embedding_model: str = "google/embeddinggemma-2"
+    llm_host: str = "http://localhost:1234/v1"
+    llm_model: str = "qwen/qwen3-1.7b"

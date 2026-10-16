@@ -2,44 +2,116 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light dark" />
 <title>StatsBomb Search</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/static/styles.css" />
 </head>
 <body>
+
 <header class="topbar">
-<div class="brand">StatsBomb Search</div>
-<div class="rag-flag" id="ragFlag">keyword search · RAG-ready</div>
+  <div class="brand">StatsBomb Search</div>
+  <div class="tabs" role="tablist" aria-label="Mode">
+    <button id="tabSearch" type="button" class="tab" role="tab" aria-selected="true" aria-controls="paneSearch">Search</button>
+    <button id="tabRag" type="button" class="tab" role="tab" aria-selected="false" aria-controls="paneRag" tabindex="-1">Ask RAG</button>
+  </div>
 </header>
+
 <main class="container">
-<section class="search-card">
-<form id="searchForm" class="form-grid">
-<input id="q" name="q" type="text" placeholder="Try: shot with high xG, dribble, clearance..." autocomplete="off" />
-<input id="team" name="team" type="text" placeholder="Team (exact)" />
-<input id="player" name="player" type="text" placeholder="Player (exact)" />
-<input id="match_id" name="match_id" type="text" placeholder="Match ID" />
-<input id="minute_from" name="minute_from" type="number" min="0" max="200" placeholder="Min from" />
-<input id="minute_to" name="minute_to" type="number" min="0" max="200" placeholder="Min to" />
-<select id="size" name="size">
-<option value="5">5 results</option>
-<option value="10" selected>10 results</option>
-<option value="20">20 results</option>
-<option value="50">50 results</option>
-</select>
-<button type="submit" id="searchBtn">Search</button>
-</form>
-<div class="hint">Normal keyword search over event narratives. Vector / RAG mode is stubbed in the API for later.</div>
-</section>
-<section class="status-row">
-<div id="status">Ready.</div>
-<div id="total"></div>
-</section>
-<section id="results" class="results"></section>
-<div class="pager">
-<button id="prevBtn" type="button">Prev</button>
-<button id="nextBtn" type="button">Next</button>
-</div>
+
+  <!-- ============ TAB 1: SEARCH ============ -->
+  <section id="paneSearch" class="pane" role="tabpanel" aria-labelledby="tabSearch">
+    <div class="card">
+      <form id="searchForm" class="search-form">
+        <label class="field field-wide">
+          <span>Search events</span>
+          <input id="q" name="q" type="search" placeholder="shot with high xG, dribble, clearance…" autocomplete="off" />
+        </label>
+
+        <div class="filters">
+          <label class="field">
+            <span>Team</span>
+            <input id="team" name="team" type="text" placeholder="Exact name" />
+          </label>
+          <label class="field">
+            <span>Player</span>
+            <input id="player" name="player" type="text" placeholder="Exact name" />
+          </label>
+          <label class="field">
+            <span>Match ID</span>
+            <input id="match_id" name="match_id" type="text" inputmode="numeric" placeholder="e.g. 3869685" />
+          </label>
+          <label class="field">
+            <span>From minute</span>
+            <input id="minute_from" name="minute_from" type="number" min="0" max="200" placeholder="0" />
+          </label>
+          <label class="field">
+            <span>To minute</span>
+            <input id="minute_to" name="minute_to" type="number" min="0" max="200" placeholder="120" />
+          </label>
+          <label class="field">
+            <span>Results per page</span>
+            <select id="size" name="size">
+              <option value="5">5</option>
+              <option value="10" selected>10</option>
+              <option value="20">20</option>
+              <option value="50">50</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="form-foot">
+          <p class="hint">Keyword search over event narratives.</p>
+          <button type="submit" id="searchBtn" class="btn-primary">Search</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="status-row" aria-live="polite">
+      <div id="status">Ready.</div>
+      <div id="total"></div>
+    </div>
+
+    <section id="results" class="results" aria-label="Search results"></section>
+
+    <nav class="pager" aria-label="Pagination">
+      <button id="prevBtn" type="button" class="btn-ghost">Previous</button>
+      <button id="nextBtn" type="button" class="btn-ghost">Next</button>
+    </nav>
+  </section>
+
+  <!-- ============ TAB 2: ASK RAG (fully self-contained) ============ -->
+  <section id="paneRag" class="pane" role="tabpanel" aria-labelledby="tabRag" hidden>
+    <div class="card">
+      <form id="ragForm" class="rag-form">
+        <label class="field field-wide">
+          <span>Ask a question</span>
+          <input id="ragQ" name="question" type="text" placeholder="Who scored late goals in the final minutes?" autocomplete="off" />
+        </label>
+        <button type="submit" id="askBtn" class="btn-primary">Ask</button>
+      </form>
+      <p class="hint">Each question retrieves matching events, then the language model answers from them.</p>
+    </div>
+
+    <div class="status-row" aria-live="polite">
+      <div id="ragStatus">Ready.</div>
+      <div id="ragModel"></div>
+    </div>
+
+    <article id="ragAnswerCard" class="card answer-card" hidden>
+      <h2 class="section-title">Answer</h2>
+      <div id="ragAnswer" class="answer"></div>
+    </article>
+
+    <h2 class="section-title">Top 10 events behind this answer</h2>
+    <section id="ragCitations" class="results" aria-label="Source events"></section>
+  </section>
+
 </main>
+
 <script src="/static/app.js"></script>
 </body>
 </html>

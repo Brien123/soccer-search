@@ -27,6 +27,15 @@ class SearchService:
         )
         return self._to_response(raw, query.mode)
 
+    def search_hybrid(
+        self, query: SearchQuery, query_vector: list[float]
+    ) -> SearchResponse:
+        body: dict[str, Any] = self._build_hybrid_body(query, query_vector)
+        raw: dict[str, Any] = self._provider.get_client().search(
+            index=self._provider.get_index(), body=body
+        )
+        return self._to_response(raw, "hybrid")
+
     def health(self) -> dict[str, Any]:
         client: Any = self._provider.get_client()
         info: dict[str, Any] = dict(client.info())
@@ -63,6 +72,39 @@ class SearchService:
             "track_total_hits": True,
             "sort": [{"_score": {"order": "desc"}}, {"minute": {"order": "asc"}}],
             "query": {"bool": {"must": must_clauses, "filter": filter_clauses}},
+        }
+
+    def _build_hybrid_body(
+        self, query: SearchQuery, query_vector: list[float]
+    ) -> dict[str, Any]:
+        keyword: dict[str, Any] = self._build_keyword_body(query)
+        filters: list[dict[str, Any]] = keyword["query"]["bool"]["filter"]
+        text: str = query.q.strip()
+        should: list[dict[str, Any]] = []
+        if text:
+            should.append({"match": {"narrative": {"query": text, "boost": 1.0}}})
+        should.append(
+            {
+                "knn": {
+                    "field": "narrative_vector",
+                    "query_vector": query_vector,
+                    "k": query.size,
+                    "num_candidates": 50,
+                    "boost": 2.0,
+                }
+            }
+        )
+        return {
+            "size": query.size,
+            "from": query.offset,
+            "track_total_hits": True,
+            "query": {
+                "bool": {
+                    "filter": filters,
+                    "should": should,
+                    "minimum_should_match": 1,
+                }
+            },
         }
 
     def _to_response(self, raw: dict[str, Any], mode: str) -> SearchResponse:
