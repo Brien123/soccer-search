@@ -1,0 +1,3440 @@
+{
+  "cutoffs": [
+    5,
+    10
+  ],
+  "modes": [
+    "keyword",
+    "hybrid",
+    "oracle"
+  ],
+  "overall": {
+    "keyword": {
+      "cases": 28,
+      "macro": {
+        "mrr": 0.6331774376417234,
+        "precision@5": 0.5428571428571428,
+        "recall@5": 0.1699664224664225,
+        "f1@5": 0.21397910844915452,
+        "ndcg@5": 0.5615759627623894,
+        "precision@10": 0.5142857142857143,
+        "recall@10": 0.3089606227106227,
+        "f1@10": 0.3061612364243943,
+        "ndcg@10": 0.5695330249420291
+      },
+      "micro": {
+        "5": {
+          "precision": 0.5428571428571428,
+          "recall": 0.076,
+          "f1": 0.13333333333333333
+        },
+        "10": {
+          "precision": 0.5142857142857142,
+          "recall": 0.144,
+          "f1": 0.22499999999999998
+        }
+      }
+    },
+    "hybrid": {
+      "cases": 28,
+      "macro": {
+        "mrr": 0.6375000000000001,
+        "precision@5": 0.5714285714285714,
+        "recall@5": 0.18621642246642248,
+        "f1@5": 0.22388348978210731,
+        "ndcg@5": 0.5920127827872469,
+        "precision@10": 0.5428571428571428,
+        "recall@10": 0.3146749084249084,
+        "f1@10": 0.31568504594820385,
+        "ndcg@10": 0.5977975796888814
+      },
+      "micro": {
+        "5": {
+          "precision": 0.5714285714285714,
+          "recall": 0.08,
+          "f1": 0.14035087719298248
+        },
+        "10": {
+          "precision": 0.5428571428571428,
+          "recall": 0.152,
+          "f1": 0.2375
+        }
+      }
+    },
+    "oracle": {
+      "cases": 28,
+      "macro": {
+        "mrr": 0.9642857142857143,
+        "precision@5": 0.9642857142857143,
+        "recall@5": 0.2421092796092796,
+        "f1@5": 0.3312332828461861,
+        "ndcg@5": 0.9642857142857143,
+        "precision@10": 0.9642857142857143,
+        "recall@10": 0.386996336996337,
+        "f1@10": 0.4920634920634921,
+        "ndcg@10": 0.9642857142857143
+      },
+      "micro": {
+        "5": {
+          "precision": 1.0,
+          "recall": 0.129,
+          "f1": 0.22852081488042517
+        },
+        "10": {
+          "precision": 1.0,
+          "recall": 0.248,
+          "f1": 0.3974358974358974
+        }
+      }
+    }
+  },
+  "by_category": {
+    "structured": {
+      "keyword": {
+        "cases": 18,
+        "macro": {
+          "mrr": 0.6714506172839506,
+          "precision@5": 0.5555555555555556,
+          "recall@5": 0.17219610636277302,
+          "f1@5": 0.20452343355569164,
+          "ndcg@5": 0.583896705145132,
+          "precision@10": 0.5222222222222223,
+          "recall@10": 0.26183048433048434,
+          "f1@10": 0.2767056530214425,
+          "ndcg@10": 0.579246698340596
+        },
+        "micro": {
+          "5": {
+            "precision": 0.5555555555555556,
+            "recall": 0.07407407407407407,
+            "f1": 0.13071895424836602
+          },
+          "10": {
+            "precision": 0.5222222222222223,
+            "recall": 0.13925925925925925,
+            "f1": 0.21988304093567246
+          }
+        }
+      },
+      "hybrid": {
+        "cases": 18,
+        "macro": {
+          "mrr": 0.6916666666666667,
+          "precision@5": 0.5888888888888889,
+          "recall@5": 0.16969610636277302,
+          "f1@5": 0.20405723308949117,
+          "ndcg@5": 0.6226641737645153,
+          "precision@10": 0.55,
+          "recall@10": 0.2673860398860399,
+          "f1@10": 0.28596491228070176,
+          "ndcg@10": 0.612894970583782
+        },
+        "micro": {
+          "5": {
+            "precision": 0.5888888888888889,
+            "recall": 0.07851851851851852,
+            "f1": 0.13856209150326798
+          },
+          "10": {
+            "precision": 0.55,
+            "recall": 0.14666666666666667,
+            "f1": 0.23157894736842105
+          }
+        }
+      },
+      "oracle": {
+        "cases": 18,
+        "macro": {
+          "mrr": 0.9444444444444444,
+          "precision@5": 0.9444444444444444,
+          "recall@5": 0.20775166191832858,
+          "f1@5": 0.2929794220116801,
+          "ndcg@5": 0.9444444444444444,
+          "precision@10": 0.9444444444444444,
+          "recall@10": 0.33988603988603994,
+          "f1@10": 0.44753086419753085,
+          "ndcg@10": 0.9444444444444444
+        },
+        "micro": {
+          "5": {
+            "precision": 1.0,
+            "recall": 0.12148148148148148,
+            "f1": 0.2166446499339498
+          },
+          "10": {
+            "precision": 1.0,
+            "recall": 0.23555555555555555,
+            "f1": 0.381294964028777
+          }
+        }
+      }
+    },
+    "semantic": {
+      "keyword": {
+        "cases": 10,
+        "macro": {
+          "mrr": 0.5642857142857143,
+          "precision@5": 0.52,
+          "recall@5": 0.16595299145299144,
+          "f1@5": 0.23099932325738778,
+          "ndcg@5": 0.5213986264734528,
+          "precision@10": 0.5,
+          "recall@10": 0.39379487179487177,
+          "f1@10": 0.3591812865497076,
+          "ndcg@10": 0.5520484128246088
+        },
+        "micro": {
+          "5": {
+            "precision": 0.52,
+            "recall": 0.08,
+            "f1": 0.1386666666666667
+          },
+          "10": {
+            "precision": 0.5,
+            "recall": 0.15384615384615385,
+            "f1": 0.23529411764705882
+          }
+        }
+      },
+      "hybrid": {
+        "cases": 10,
+        "macro": {
+          "mrr": 0.54,
+          "precision@5": 0.54,
+          "recall@5": 0.21595299145299146,
+          "f1@5": 0.25957075182881634,
+          "ndcg@5": 0.5368402790281638,
+          "precision@10": 0.53,
+          "recall@10": 0.3997948717948718,
+          "f1@10": 0.3691812865497076,
+          "ndcg@10": 0.5706222760780604
+        },
+        "micro": {
+          "5": {
+            "precision": 0.54,
+            "recall": 0.08307692307692308,
+            "f1": 0.14400000000000002
+          },
+          "10": {
+            "precision": 0.53,
+            "recall": 0.16307692307692306,
+            "f1": 0.24941176470588233
+          }
+        }
+      },
+      "oracle": {
+        "cases": 10,
+        "macro": {
+          "mrr": 1.0,
+          "precision@5": 1.0,
+          "recall@5": 0.30395299145299143,
+          "f1@5": 0.4000902323482968,
+          "ndcg@5": 1.0,
+          "precision@10": 1.0,
+          "recall@10": 0.4717948717948718,
+          "f1@10": 0.5722222222222222,
+          "ndcg@10": 1.0
+        },
+        "micro": {
+          "5": {
+            "precision": 1.0,
+            "recall": 0.14461538461538462,
+            "f1": 0.25268817204301075
+          },
+          "10": {
+            "precision": 1.0,
+            "recall": 0.27384615384615385,
+            "f1": 0.42995169082125606
+          }
+        }
+      }
+    }
+  },
+  "negatives": {
+    "keyword": {
+      "cases": 5.0,
+      "returned_any": 5.0,
+      "false_positive_rate": 1.0
+    },
+    "hybrid": {
+      "cases": 5.0,
+      "returned_any": 5.0,
+      "false_positive_rate": 1.0
+    },
+    "oracle": {
+      "cases": 5.0,
+      "returned_any": 0.0,
+      "false_positive_rate": 0.0
+    }
+  },
+  "cases": [
+    {
+      "case_id": "s01",
+      "query": "late goals in the final minutes",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 2,
+      "tp": {
+        "5": 2,
+        "10": 2
+      },
+      "fp": {
+        "5": 3,
+        "10": 8
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "f1@5": 0.5714285714285715,
+        "ndcg@5": 1.0,
+        "precision@10": 0.2,
+        "recall@10": 1.0,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s01",
+      "query": "late goals in the final minutes",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 2,
+      "tp": {
+        "5": 2,
+        "10": 2
+      },
+      "fp": {
+        "5": 3,
+        "10": 8
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "f1@5": 0.5714285714285715,
+        "ndcg@5": 1.0,
+        "precision@10": 0.2,
+        "recall@10": 1.0,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s01",
+      "query": "late goals in the final minutes",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 2,
+      "relevant_total": 2,
+      "tp": {
+        "5": 2,
+        "10": 2
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 1.0,
+        "f1@5": 1.0,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 1.0,
+        "f1@10": 1.0,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s02",
+      "query": "high xG scoring chances",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 8,
+      "tp": {
+        "5": 5,
+        "10": 7
+      },
+      "fp": {
+        "5": 0,
+        "10": 3
+      },
+      "fn": {
+        "5": 3,
+        "10": 1
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.625,
+        "f1@5": 0.7692307692307693,
+        "ndcg@5": 1.0,
+        "precision@10": 0.7,
+        "recall@10": 0.875,
+        "f1@10": 0.7777777777777777,
+        "ndcg@10": 0.909008065625576
+      }
+    },
+    {
+      "case_id": "s02",
+      "query": "high xG scoring chances",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 8,
+      "tp": {
+        "5": 4,
+        "10": 7
+      },
+      "fp": {
+        "5": 1,
+        "10": 3
+      },
+      "fn": {
+        "5": 4,
+        "10": 1
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 0.8,
+        "recall@5": 0.5,
+        "f1@5": 0.6153846153846154,
+        "ndcg@5": 0.8687949224876582,
+        "precision@10": 0.7,
+        "recall@10": 0.875,
+        "f1@10": 0.7777777777777777,
+        "ndcg@10": 0.8954707052463013
+      }
+    },
+    {
+      "case_id": "s02",
+      "query": "high xG scoring chances",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 8,
+      "relevant_total": 8,
+      "tp": {
+        "5": 5,
+        "10": 8
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 3,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.625,
+        "f1@5": 0.7692307692307693,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 1.0,
+        "f1@10": 1.0,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s03",
+      "query": "key passes creating a chance",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 9
+      },
+      "fp": {
+        "5": 0,
+        "10": 1
+      },
+      "fn": {
+        "5": 45,
+        "10": 41
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 0.9,
+        "recall@10": 0.18,
+        "f1@10": 0.3,
+        "ndcg@10": 0.9305687780632227
+      }
+    },
+    {
+      "case_id": "s03",
+      "query": "key passes creating a chance",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s03",
+      "query": "key passes creating a chance",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s04",
+      "query": "goal assists",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 9,
+      "tp": {
+        "5": 5,
+        "10": 9
+      },
+      "fp": {
+        "5": 0,
+        "10": 1
+      },
+      "fn": {
+        "5": 4,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.5555555555555556,
+        "f1@5": 0.7142857142857143,
+        "ndcg@5": 1.0,
+        "precision@10": 0.9,
+        "recall@10": 1.0,
+        "f1@10": 0.9473684210526316,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s04",
+      "query": "goal assists",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 9,
+      "tp": {
+        "5": 5,
+        "10": 9
+      },
+      "fp": {
+        "5": 0,
+        "10": 1
+      },
+      "fn": {
+        "5": 4,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.5555555555555556,
+        "f1@5": 0.7142857142857143,
+        "ndcg@5": 1.0,
+        "precision@10": 0.9,
+        "recall@10": 1.0,
+        "f1@10": 0.9473684210526316,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s04",
+      "query": "goal assists",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 9,
+      "relevant_total": 9,
+      "tp": {
+        "5": 5,
+        "10": 9
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 4,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.5555555555555556,
+        "f1@5": 0.7142857142857143,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 1.0,
+        "f1@10": 1.0,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s05",
+      "query": "through balls splitting the defence",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 26,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 21,
+        "10": 16
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.19230769230769232,
+        "f1@5": 0.32258064516129037,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.38461538461538464,
+        "f1@10": 0.5555555555555556,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s05",
+      "query": "through balls splitting the defence",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 26,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 21,
+        "10": 16
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.19230769230769232,
+        "f1@5": 0.32258064516129037,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.38461538461538464,
+        "f1@10": 0.5555555555555556,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s05",
+      "query": "through balls splitting the defence",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 26,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 21,
+        "10": 16
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.19230769230769232,
+        "f1@5": 0.32258064516129037,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.38461538461538464,
+        "f1@10": 0.5555555555555556,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s06",
+      "query": "crosses into the box",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 3,
+        "10": 7
+      },
+      "fp": {
+        "5": 2,
+        "10": 3
+      },
+      "fn": {
+        "5": 47,
+        "10": 43
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 0.6,
+        "recall@5": 0.06,
+        "f1@5": 0.1090909090909091,
+        "ndcg@5": 0.6992148198508501,
+        "precision@10": 0.7,
+        "recall@10": 0.14,
+        "f1@10": 0.23333333333333336,
+        "ndcg@10": 0.7314470771099788
+      }
+    },
+    {
+      "case_id": "s06",
+      "query": "crosses into the box",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 3,
+        "10": 7
+      },
+      "fp": {
+        "5": 2,
+        "10": 3
+      },
+      "fn": {
+        "5": 47,
+        "10": 43
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 0.6,
+        "recall@5": 0.06,
+        "f1@5": 0.1090909090909091,
+        "ndcg@5": 0.6548086577531307,
+        "precision@10": 0.7,
+        "recall@10": 0.14,
+        "f1@10": 0.23333333333333336,
+        "ndcg@10": 0.7065632165480471
+      }
+    },
+    {
+      "case_id": "s06",
+      "query": "crosses into the box",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s07",
+      "query": "passes made under pressure",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 0,
+        "10": 2
+      },
+      "fp": {
+        "5": 5,
+        "10": 8
+      },
+      "fn": {
+        "5": 50,
+        "10": 48
+      },
+      "metrics": {
+        "mrr": 0.1111111111111111,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.2,
+        "recall@10": 0.04,
+        "f1@10": 0.06666666666666667,
+        "ndcg@10": 0.12987501165334076
+      }
+    },
+    {
+      "case_id": "s07",
+      "query": "passes made under pressure",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 1,
+        "10": 1
+      },
+      "fp": {
+        "5": 4,
+        "10": 9
+      },
+      "fn": {
+        "5": 49,
+        "10": 49
+      },
+      "metrics": {
+        "mrr": 0.2,
+        "precision@5": 0.2,
+        "recall@5": 0.02,
+        "f1@5": 0.03636363636363636,
+        "ndcg@5": 0.13120507751234178,
+        "precision@10": 0.1,
+        "recall@10": 0.02,
+        "f1@10": 0.03333333333333333,
+        "ndcg@10": 0.08514311764162098
+      }
+    },
+    {
+      "case_id": "s07",
+      "query": "passes made under pressure",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s08",
+      "query": "clearances deep in the defensive third",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 2,
+        "10": 2
+      },
+      "fp": {
+        "5": 3,
+        "10": 8
+      },
+      "fn": {
+        "5": 48,
+        "10": 48
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 0.4,
+        "recall@5": 0.04,
+        "f1@5": 0.07272727272727272,
+        "ndcg@5": 0.4703652827859579,
+        "precision@10": 0.2,
+        "recall@10": 0.04,
+        "f1@10": 0.06666666666666667,
+        "ndcg@10": 0.30523488393970116
+      }
+    },
+    {
+      "case_id": "s08",
+      "query": "clearances deep in the defensive third",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 2,
+        "10": 5
+      },
+      "fp": {
+        "5": 3,
+        "10": 5
+      },
+      "fn": {
+        "5": 48,
+        "10": 45
+      },
+      "metrics": {
+        "mrr": 0.25,
+        "precision@5": 0.4,
+        "recall@5": 0.04,
+        "f1@5": 0.07272727272727272,
+        "ndcg@5": 0.27727342735504823,
+        "precision@10": 0.5,
+        "recall@10": 0.1,
+        "f1@10": 0.16666666666666669,
+        "ndcg@10": 0.37923771560128977
+      }
+    },
+    {
+      "case_id": "s08",
+      "query": "clearances deep in the defensive third",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s09",
+      "query": "interceptions cutting passing lanes",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 9
+      },
+      "fp": {
+        "5": 0,
+        "10": 1
+      },
+      "fn": {
+        "5": 45,
+        "10": 41
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 0.9,
+        "recall@10": 0.18,
+        "f1@10": 0.3,
+        "ndcg@10": 0.933745776545611
+      }
+    },
+    {
+      "case_id": "s09",
+      "query": "interceptions cutting passing lanes",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 3,
+        "10": 8
+      },
+      "fp": {
+        "5": 2,
+        "10": 2
+      },
+      "fn": {
+        "5": 47,
+        "10": 42
+      },
+      "metrics": {
+        "mrr": 0.5,
+        "precision@5": 0.6,
+        "recall@5": 0.06,
+        "f1@5": 0.1090909090909091,
+        "ndcg@5": 0.5296347172140421,
+        "precision@10": 0.8,
+        "recall@10": 0.16,
+        "f1@10": 0.26666666666666666,
+        "ndcg@10": 0.6947651160602988
+      }
+    },
+    {
+      "case_id": "s09",
+      "query": "interceptions cutting passing lanes",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s10",
+      "query": "defensive blocks",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 2,
+        "10": 2
+      },
+      "fp": {
+        "5": 3,
+        "10": 8
+      },
+      "fn": {
+        "5": 48,
+        "10": 48
+      },
+      "metrics": {
+        "mrr": 0.25,
+        "precision@5": 0.4,
+        "recall@5": 0.04,
+        "f1@5": 0.07272727272727272,
+        "ndcg@5": 0.27727342735504823,
+        "precision@10": 0.2,
+        "recall@10": 0.04,
+        "f1@10": 0.06666666666666667,
+        "ndcg@10": 0.17993148201117176
+      }
+    },
+    {
+      "case_id": "s10",
+      "query": "defensive blocks",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 3,
+        "10": 5
+      },
+      "fp": {
+        "5": 2,
+        "10": 5
+      },
+      "fn": {
+        "5": 47,
+        "10": 45
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 0.6,
+        "recall@5": 0.06,
+        "f1@5": 0.1090909090909091,
+        "ndcg@5": 0.7227265726449519,
+        "precision@10": 0.5,
+        "recall@10": 0.1,
+        "f1@10": 0.16666666666666669,
+        "ndcg@10": 0.6086182388744239
+      }
+    },
+    {
+      "case_id": "s10",
+      "query": "defensive blocks",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s11",
+      "query": "ball recoveries regaining possession",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 0,
+        "10": 2
+      },
+      "fp": {
+        "5": 5,
+        "10": 8
+      },
+      "fn": {
+        "5": 50,
+        "10": 48
+      },
+      "metrics": {
+        "mrr": 0.125,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.2,
+        "recall@10": 0.04,
+        "f1@10": 0.06666666666666667,
+        "ndcg@10": 0.13568544539116628
+      }
+    },
+    {
+      "case_id": "s11",
+      "query": "ball recoveries regaining possession",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 3,
+        "10": 3
+      },
+      "fp": {
+        "5": 2,
+        "10": 7
+      },
+      "fn": {
+        "5": 47,
+        "10": 47
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 0.6,
+        "recall@5": 0.06,
+        "f1@5": 0.1090909090909091,
+        "ndcg@5": 0.7227265726449519,
+        "precision@10": 0.3,
+        "recall@10": 0.06,
+        "f1@10": 0.09999999999999999,
+        "ndcg@10": 0.4690000933206748
+      }
+    },
+    {
+      "case_id": "s11",
+      "query": "ball recoveries regaining possession",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s12",
+      "query": "defensive pressure applied on opponents",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 50,
+        "10": 50
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "s12",
+      "query": "defensive pressure applied on opponents",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 50,
+        "10": 50
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "s12",
+      "query": "defensive pressure applied on opponents",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s13",
+      "query": "successful dribbles beating a man",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 30,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 25,
+        "10": 20
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.16666666666666666,
+        "f1@5": 0.2857142857142857,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.3333333333333333,
+        "f1@10": 0.5,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s13",
+      "query": "successful dribbles beating a man",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 30,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 25,
+        "10": 20
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.16666666666666666,
+        "f1@5": 0.2857142857142857,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.3333333333333333,
+        "f1@10": 0.5,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s13",
+      "query": "successful dribbles beating a man",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 30,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 25,
+        "10": 20
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.16666666666666666,
+        "f1@5": 0.2857142857142857,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.3333333333333333,
+        "f1@10": 0.5,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s14",
+      "query": "miscontrols causing a turnover",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 4,
+        "10": 7
+      },
+      "fp": {
+        "5": 1,
+        "10": 3
+      },
+      "fn": {
+        "5": 46,
+        "10": 43
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 0.8,
+        "recall@5": 0.08,
+        "f1@5": 0.14545454545454545,
+        "ndcg@5": 0.7860137352654724,
+        "precision@10": 0.7,
+        "recall@10": 0.14,
+        "f1@10": 0.23333333333333336,
+        "ndcg@10": 0.7133080652109928
+      }
+    },
+    {
+      "case_id": "s14",
+      "query": "miscontrols causing a turnover",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 4,
+        "10": 7
+      },
+      "fp": {
+        "5": 1,
+        "10": 3
+      },
+      "fn": {
+        "5": 46,
+        "10": 43
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 0.8,
+        "recall@5": 0.08,
+        "f1@5": 0.14545454545454545,
+        "ndcg@5": 0.7860137352654724,
+        "precision@10": 0.7,
+        "recall@10": 0.14,
+        "f1@10": 0.23333333333333336,
+        "ndcg@10": 0.7133080652109928
+      }
+    },
+    {
+      "case_id": "s14",
+      "query": "miscontrols causing a turnover",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s15",
+      "query": "players dispossessed in duels",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 4,
+        "10": 8
+      },
+      "fp": {
+        "5": 1,
+        "10": 2
+      },
+      "fn": {
+        "5": 46,
+        "10": 42
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 0.8,
+        "recall@5": 0.08,
+        "f1@5": 0.14545454545454545,
+        "ndcg@5": 0.7860137352654724,
+        "precision@10": 0.8,
+        "recall@10": 0.16,
+        "f1@10": 0.26666666666666666,
+        "ndcg@10": 0.7975167679274937
+      }
+    },
+    {
+      "case_id": "s15",
+      "query": "players dispossessed in duels",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 4,
+        "10": 7
+      },
+      "fp": {
+        "5": 1,
+        "10": 3
+      },
+      "fn": {
+        "5": 46,
+        "10": 43
+      },
+      "metrics": {
+        "mrr": 0.5,
+        "precision@5": 0.8,
+        "recall@5": 0.08,
+        "f1@5": 0.14545454545454545,
+        "ndcg@5": 0.6608397947263839,
+        "precision@10": 0.7,
+        "recall@10": 0.14,
+        "f1@10": 0.23333333333333336,
+        "ndcg@10": 0.6442227883107535
+      }
+    },
+    {
+      "case_id": "s15",
+      "query": "players dispossessed in duels",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s16",
+      "query": "aerial duels contested",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 0,
+        "10": 1
+      },
+      "fp": {
+        "5": 5,
+        "10": 9
+      },
+      "fn": {
+        "5": 50,
+        "10": 49
+      },
+      "metrics": {
+        "mrr": 0.1,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.1,
+        "recall@10": 0.02,
+        "f1@10": 0.03333333333333333,
+        "ndcg@10": 0.06362078819895171
+      }
+    },
+    {
+      "case_id": "s16",
+      "query": "aerial duels contested",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 50,
+        "10": 50
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "s16",
+      "query": "aerial duels contested",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s17",
+      "query": "fouls committed",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 3,
+        "10": 7
+      },
+      "fp": {
+        "5": 2,
+        "10": 3
+      },
+      "fn": {
+        "5": 47,
+        "10": 43
+      },
+      "metrics": {
+        "mrr": 0.5,
+        "precision@5": 0.6,
+        "recall@5": 0.06,
+        "f1@5": 0.1090909090909091,
+        "ndcg@5": 0.4912596920895758,
+        "precision@10": 0.7,
+        "recall@10": 0.14,
+        "f1@10": 0.23333333333333336,
+        "ndcg@10": 0.5964984284535196
+      }
+    },
+    {
+      "case_id": "s17",
+      "query": "fouls committed",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 4,
+        "10": 8
+      },
+      "fp": {
+        "5": 1,
+        "10": 2
+      },
+      "fn": {
+        "5": 46,
+        "10": 42
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 0.8,
+        "recall@5": 0.08,
+        "f1@5": 0.14545454545454545,
+        "ndcg@5": 0.8539316501572937,
+        "precision@10": 0.8,
+        "recall@10": 0.16,
+        "f1@10": 0.26666666666666666,
+        "ndcg@10": 0.8357804136936718
+      }
+    },
+    {
+      "case_id": "s17",
+      "query": "fouls committed",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "s18",
+      "query": "goalkeeper saves",
+      "category": "structured",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "s18",
+      "query": "goalkeeper saves",
+      "category": "structured",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "s18",
+      "query": "goalkeeper saves",
+      "category": "structured",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 0,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "m01",
+      "query": "goals scored right at the death",
+      "category": "semantic",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 2,
+      "tp": {
+        "5": 0,
+        "10": 2
+      },
+      "fp": {
+        "5": 5,
+        "10": 8
+      },
+      "fn": {
+        "5": 2,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.14285714285714285,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.2,
+        "recall@10": 1.0,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 0.38162168437253385
+      }
+    },
+    {
+      "case_id": "m01",
+      "query": "goals scored right at the death",
+      "category": "semantic",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 2,
+      "tp": {
+        "5": 1,
+        "10": 2
+      },
+      "fp": {
+        "5": 4,
+        "10": 8
+      },
+      "fn": {
+        "5": 1,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.2,
+        "precision@5": 0.2,
+        "recall@5": 0.5,
+        "f1@5": 0.28571428571428575,
+        "ndcg@5": 0.23719771276929622,
+        "precision@10": 0.2,
+        "recall@10": 1.0,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 0.42177340954886444
+      }
+    },
+    {
+      "case_id": "m01",
+      "query": "goals scored right at the death",
+      "category": "semantic",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 2,
+      "relevant_total": 2,
+      "tp": {
+        "5": 2,
+        "10": 2
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 1.0,
+        "f1@5": 1.0,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 1.0,
+        "f1@10": 1.0,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m02",
+      "query": "big chances with a high probability of scoring",
+      "category": "semantic",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 8,
+      "tp": {
+        "5": 5,
+        "10": 8
+      },
+      "fp": {
+        "5": 0,
+        "10": 2
+      },
+      "fn": {
+        "5": 3,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.625,
+        "f1@5": 0.7692307692307693,
+        "ndcg@5": 1.0,
+        "precision@10": 0.8,
+        "recall@10": 1.0,
+        "f1@10": 0.888888888888889,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m02",
+      "query": "big chances with a high probability of scoring",
+      "category": "semantic",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 8,
+      "tp": {
+        "5": 5,
+        "10": 8
+      },
+      "fp": {
+        "5": 0,
+        "10": 2
+      },
+      "fn": {
+        "5": 3,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.625,
+        "f1@5": 0.7692307692307693,
+        "ndcg@5": 1.0,
+        "precision@10": 0.8,
+        "recall@10": 1.0,
+        "f1@10": 0.888888888888889,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m02",
+      "query": "big chances with a high probability of scoring",
+      "category": "semantic",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 8,
+      "relevant_total": 8,
+      "tp": {
+        "5": 5,
+        "10": 8
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 3,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.625,
+        "f1@5": 0.7692307692307693,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 1.0,
+        "f1@10": 1.0,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m03",
+      "query": "passes that set up a shot",
+      "category": "semantic",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 9
+      },
+      "fp": {
+        "5": 0,
+        "10": 1
+      },
+      "fn": {
+        "5": 45,
+        "10": 41
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 0.9,
+        "recall@10": 0.18,
+        "f1@10": 0.3,
+        "ndcg@10": 0.9216017310213246
+      }
+    },
+    {
+      "case_id": "m03",
+      "query": "passes that set up a shot",
+      "category": "semantic",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 9
+      },
+      "fp": {
+        "5": 0,
+        "10": 1
+      },
+      "fn": {
+        "5": 45,
+        "10": 41
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 0.9,
+        "recall@10": 0.18,
+        "f1@10": 0.3,
+        "ndcg@10": 0.9216017310213246
+      }
+    },
+    {
+      "case_id": "m03",
+      "query": "passes that set up a shot",
+      "category": "semantic",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m04",
+      "query": "balls played that led directly to a goal",
+      "category": "semantic",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 9,
+      "tp": {
+        "5": 5,
+        "10": 9
+      },
+      "fp": {
+        "5": 0,
+        "10": 1
+      },
+      "fn": {
+        "5": 4,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.5555555555555556,
+        "f1@5": 0.7142857142857143,
+        "ndcg@5": 1.0,
+        "precision@10": 0.9,
+        "recall@10": 1.0,
+        "f1@10": 0.9473684210526316,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m04",
+      "query": "balls played that led directly to a goal",
+      "category": "semantic",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 9,
+      "tp": {
+        "5": 5,
+        "10": 9
+      },
+      "fp": {
+        "5": 0,
+        "10": 1
+      },
+      "fn": {
+        "5": 4,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.5555555555555556,
+        "f1@5": 0.7142857142857143,
+        "ndcg@5": 1.0,
+        "precision@10": 0.9,
+        "recall@10": 1.0,
+        "f1@10": 0.9473684210526316,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m04",
+      "query": "balls played that led directly to a goal",
+      "category": "semantic",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 9,
+      "relevant_total": 9,
+      "tp": {
+        "5": 5,
+        "10": 9
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 4,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.5555555555555556,
+        "f1@5": 0.7142857142857143,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 1.0,
+        "f1@10": 1.0,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m05",
+      "query": "incisive balls played in behind the defence",
+      "category": "semantic",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 26,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 21,
+        "10": 16
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.19230769230769232,
+        "f1@5": 0.32258064516129037,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.38461538461538464,
+        "f1@10": 0.5555555555555556,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m05",
+      "query": "incisive balls played in behind the defence",
+      "category": "semantic",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 26,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 21,
+        "10": 16
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.19230769230769232,
+        "f1@5": 0.32258064516129037,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.38461538461538464,
+        "f1@10": 0.5555555555555556,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m05",
+      "query": "incisive balls played in behind the defence",
+      "category": "semantic",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 26,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 21,
+        "10": 16
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.19230769230769232,
+        "f1@5": 0.32258064516129037,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.38461538461538464,
+        "f1@10": 0.5555555555555556,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m06",
+      "query": "deliveries from wide into the penalty area",
+      "category": "semantic",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 50,
+        "10": 50
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "m06",
+      "query": "deliveries from wide into the penalty area",
+      "category": "semantic",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 50,
+        "10": 50
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "m06",
+      "query": "deliveries from wide into the penalty area",
+      "category": "semantic",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m07",
+      "query": "passes made while being closed down",
+      "category": "semantic",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 50,
+        "10": 50
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "m07",
+      "query": "passes made while being closed down",
+      "category": "semantic",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 50,
+        "10": 50
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "m07",
+      "query": "passes made while being closed down",
+      "category": "semantic",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m08",
+      "query": "defenders hoofing the ball away from danger",
+      "category": "semantic",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 1,
+        "10": 2
+      },
+      "fp": {
+        "5": 4,
+        "10": 8
+      },
+      "fn": {
+        "5": 49,
+        "10": 48
+      },
+      "metrics": {
+        "mrr": 0.5,
+        "precision@5": 0.2,
+        "recall@5": 0.02,
+        "f1@5": 0.03636363636363636,
+        "ndcg@5": 0.21398626473452756,
+        "precision@10": 0.2,
+        "recall@10": 0.04,
+        "f1@10": 0.06666666666666667,
+        "ndcg@10": 0.21726071285222986
+      }
+    },
+    {
+      "case_id": "m08",
+      "query": "defenders hoofing the ball away from danger",
+      "category": "semantic",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 1,
+        "10": 5
+      },
+      "fp": {
+        "5": 4,
+        "10": 5
+      },
+      "fn": {
+        "5": 49,
+        "10": 45
+      },
+      "metrics": {
+        "mrr": 0.2,
+        "precision@5": 0.2,
+        "recall@5": 0.02,
+        "f1@5": 0.03636363636363636,
+        "ndcg@5": 0.13120507751234178,
+        "precision@10": 0.5,
+        "recall@10": 0.1,
+        "f1@10": 0.16666666666666669,
+        "ndcg@10": 0.36284762021041433
+      }
+    },
+    {
+      "case_id": "m08",
+      "query": "defenders hoofing the ball away from danger",
+      "category": "semantic",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m09",
+      "query": "winning the ball back immediately",
+      "category": "semantic",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 50,
+        "10": 50
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "m09",
+      "query": "winning the ball back immediately",
+      "category": "semantic",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 50,
+        "10": 50
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "m09",
+      "query": "winning the ball back immediately",
+      "category": "semantic",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 50,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 45,
+        "10": 40
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.1,
+        "f1@5": 0.18181818181818182,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.2,
+        "f1@10": 0.33333333333333337,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m10",
+      "query": "beating a defender one on one",
+      "category": "semantic",
+      "mode": "keyword",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 30,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 25,
+        "10": 20
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.16666666666666666,
+        "f1@5": 0.2857142857142857,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.3333333333333333,
+        "f1@10": 0.5,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m10",
+      "query": "beating a defender one on one",
+      "category": "semantic",
+      "mode": "hybrid",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 30,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 25,
+        "10": 20
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.16666666666666666,
+        "f1@5": 0.2857142857142857,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.3333333333333333,
+        "f1@10": 0.5,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "m10",
+      "query": "beating a defender one on one",
+      "category": "semantic",
+      "mode": "oracle",
+      "expected_empty": false,
+      "retrieved": 10,
+      "relevant_total": 30,
+      "tp": {
+        "5": 5,
+        "10": 10
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 25,
+        "10": 20
+      },
+      "metrics": {
+        "mrr": 1.0,
+        "precision@5": 1.0,
+        "recall@5": 0.16666666666666666,
+        "f1@5": 0.2857142857142857,
+        "ndcg@5": 1.0,
+        "precision@10": 1.0,
+        "recall@10": 0.3333333333333333,
+        "f1@10": 0.5,
+        "ndcg@10": 1.0
+      }
+    },
+    {
+      "case_id": "n01",
+      "query": "offside goals in the 2010 world cup final",
+      "category": "negative",
+      "mode": "keyword",
+      "expected_empty": true,
+      "retrieved": 10,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "n01",
+      "query": "offside goals in the 2010 world cup final",
+      "category": "negative",
+      "mode": "hybrid",
+      "expected_empty": true,
+      "retrieved": 10,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "n01",
+      "query": "offside goals in the 2010 world cup final",
+      "category": "negative",
+      "mode": "oracle",
+      "expected_empty": true,
+      "retrieved": 0,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "n02",
+      "query": "penalty shootout saves in this match",
+      "category": "negative",
+      "mode": "keyword",
+      "expected_empty": true,
+      "retrieved": 10,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "n02",
+      "query": "penalty shootout saves in this match",
+      "category": "negative",
+      "mode": "hybrid",
+      "expected_empty": true,
+      "retrieved": 10,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "n02",
+      "query": "penalty shootout saves in this match",
+      "category": "negative",
+      "mode": "oracle",
+      "expected_empty": true,
+      "retrieved": 0,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "n03",
+      "query": "VAR overturns for handball",
+      "category": "negative",
+      "mode": "keyword",
+      "expected_empty": true,
+      "retrieved": 7,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 7
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "n03",
+      "query": "VAR overturns for handball",
+      "category": "negative",
+      "mode": "hybrid",
+      "expected_empty": true,
+      "retrieved": 10,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "n03",
+      "query": "VAR overturns for handball",
+      "category": "negative",
+      "mode": "oracle",
+      "expected_empty": true,
+      "retrieved": 0,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "n04",
+      "query": "goals scored by the goalkeeper",
+      "category": "negative",
+      "mode": "keyword",
+      "expected_empty": true,
+      "retrieved": 10,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "n04",
+      "query": "goals scored by the goalkeeper",
+      "category": "negative",
+      "mode": "hybrid",
+      "expected_empty": true,
+      "retrieved": 10,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "n04",
+      "query": "goals scored by the goalkeeper",
+      "category": "negative",
+      "mode": "oracle",
+      "expected_empty": true,
+      "retrieved": 0,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "n05",
+      "query": "red cards shown to the manager",
+      "category": "negative",
+      "mode": "keyword",
+      "expected_empty": true,
+      "retrieved": 10,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "n05",
+      "query": "red cards shown to the manager",
+      "category": "negative",
+      "mode": "hybrid",
+      "expected_empty": true,
+      "retrieved": 10,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 5,
+        "10": 10
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    {
+      "case_id": "n05",
+      "query": "red cards shown to the manager",
+      "category": "negative",
+      "mode": "oracle",
+      "expected_empty": true,
+      "retrieved": 0,
+      "relevant_total": 0,
+      "tp": {
+        "5": 0,
+        "10": 0
+      },
+      "fp": {
+        "5": 0,
+        "10": 0
+      },
+      "fn": {
+        "5": 0,
+        "10": 0
+      },
+      "metrics": {
+        "mrr": 0.0,
+        "precision@5": 0.0,
+        "recall@5": 0.0,
+        "f1@5": 0.0,
+        "ndcg@5": 0.0,
+        "precision@10": 0.0,
+        "recall@10": 0.0,
+        "f1@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    }
+  ]
+}
