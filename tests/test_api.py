@@ -54,6 +54,21 @@ def test_api_search_rejects_bad_size(client: TestClient) -> None:
     assert response.status_code == 422
 
 
+def test_api_search_hybrid_mode(client: TestClient) -> None:
+    response = client.get(
+        "/api/search", params={"q": "late goals", "mode": "hybrid", "size": 5}
+    )
+    assert response.status_code == 200
+    payload: dict[str, Any] = response.json()
+    assert payload["mode"] == "hybrid"
+    assert len(payload["hits"]) == 1
+
+
+def test_api_search_rejects_bad_mode(client: TestClient) -> None:
+    response = client.get("/api/search", params={"q": "shot", "mode": "vector"})
+    assert response.status_code == 422
+
+
 def test_api_health_reports_count(client: TestClient) -> None:
     response = client.get("/api/health")
     assert response.status_code == 200

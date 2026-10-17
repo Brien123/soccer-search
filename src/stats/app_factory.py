@@ -35,6 +35,9 @@ class AppFactory:
         def get_service() -> SearchService:
             return service
 
+        def get_embeddings() -> EmbeddingProvider:
+            return embeddings
+
         def get_config() -> AppConfig:
             return effective_config
 
@@ -65,7 +68,9 @@ class AppFactory:
             minute_to: int | None = Query(default=None),
             size: int = Query(default=10, ge=1, le=50),
             offset: int = Query(default=0, ge=0),
+            mode: str = Query(default="keyword", pattern="^(keyword|hybrid)$"),
             svc: SearchService = Depends(get_service),
+            emb: EmbeddingProvider = Depends(get_embeddings),
             cfg: AppConfig = Depends(get_config),
         ) -> SearchResponse:
             clamped_size: int = min(size, cfg.max_size)
@@ -78,8 +83,11 @@ class AppFactory:
                 minute_to=minute_to,
                 size=clamped_size,
                 offset=offset,
-                mode="keyword",
+                mode=mode,
             )
+            if mode == "hybrid":
+                vector: list[float] = emb.encode_query(q)
+                return svc.search_hybrid(query, vector)
             return svc.search(query)
 
         @app.post("/api/rag")
