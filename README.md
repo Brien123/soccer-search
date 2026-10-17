@@ -315,4 +315,3 @@ Copy `.env.example` to `.env` to change settings:
 - The location words (for example "attacking third") assume attacks go to +x.
 - RAG answers stay grounded in the retrieved events. The model must not invent facts.
 - The language model is small. Short, event-worded questions work best.
-- Do not commit `statsbomb-rag-data/`. Git ignores this folder.
