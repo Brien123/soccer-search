@@ -1,0 +1,41 @@
+{"id": "s01", "query": "late goals in the final minutes", "category": "structured", "intent": {"event_type": "Shot", "is_goal": true, "minute_from": 85}}
+{"id": "s02", "query": "high xG scoring chances", "category": "structured", "intent": {"event_type": "Shot", "xg_min": 0.3}}
+{"id": "s03", "query": "key passes creating a chance", "category": "structured", "intent": {"event_type": "Pass", "is_key_pass": true}}
+{"id": "s04", "query": "goal assists", "category": "structured", "intent": {"event_type": "Pass", "is_goal_assist": true}}
+{"id": "s05", "query": "through balls splitting the defence", "category": "structured", "intent": {"event_type": "Pass", "is_through_ball": true}}
+{"id": "s06", "query": "crosses into the box", "category": "structured", "intent": {"event_type": "Pass", "is_cross": true}}
+{"id": "s07", "query": "passes made under pressure", "category": "structured", "intent": {"event_type": "Pass", "under_pressure": true}}
+{"id": "s08", "query": "clearances deep in the defensive third", "category": "structured", "intent": {"event_type": "Clearance", "location_x_max": 40}}
+{"id": "s09", "query": "interceptions cutting passing lanes", "category": "structured", "intent": {"event_type": "Interception"}}
+{"id": "s10", "query": "defensive blocks", "category": "structured", "intent": {"event_type": "Block"}}
+{"id": "s11", "query": "ball recoveries regaining possession", "category": "structured", "intent": {"event_type": "Ball Recovery"}}
+{"id": "s12", "query": "defensive pressure applied on opponents", "category": "structured", "intent": {"event_type": "Pressure"}}
+{"id": "s13", "query": "successful dribbles beating a man", "category": "structured", "intent": {"event_type": "Dribble", "outcome": "Complete"}}
+{"id": "s14", "query": "miscontrols causing a turnover", "category": "structured", "intent": {"event_type": "Miscontrol"}}
+{"id": "s15", "query": "players dispossessed in duels", "category": "structured", "intent": {"event_type": "Dispossessed"}}
+{"id": "s16", "query": "aerial duels contested", "category": "structured", "intent": {"event_type": "Duel"}}
+{"id": "s17", "query": "fouls committed", "category": "structured", "intent": {"event_type": "Foul Committed"}}
+{"id": "s18", "query": "goalkeeper saves", "category": "structured", "intent": {"event_type": "Goal Keeper", "outcome": "Saved"}}
+{"id": "m01", "query": "goals scored right at the death", "category": "semantic", "intent": {"event_type": "Shot", "is_goal": true, "minute_from": 85}}
+{"id": "m02", "query": "big chances with a high probability of scoring", "category": "semantic", "intent": {"event_type": "Shot", "xg_min": 0.3}}
+{"id": "m03", "query": "passes that set up a shot", "category": "semantic", "intent": {"event_type": "Pass", "is_key_pass": true}}
+{"id": "m04", "query": "balls played that led directly to a goal", "category": "semantic", "intent": {"event_type": "Pass", "is_goal_assist": true}}
+{"id": "m05", "query": "incisive balls played in behind the defence", "category": "semantic", "intent": {"event_type": "Pass", "is_through_ball": true}}
+{"id": "m06", "query": "deliveries from wide into the penalty area", "category": "semantic", "intent": {"event_type": "Pass", "is_cross": true}}
+{"id": "m07", "query": "passes made while being closed down", "category": "semantic", "intent": {"event_type": "Pass", "under_pressure": true}}
+{"id": "m08", "query": "defenders hoofing the ball away from danger", "category": "semantic", "intent": {"event_type": "Clearance", "location_x_max": 40}}
+{"id": "m09", "query": "winning the ball back immediately", "category": "semantic", "intent": {"event_type": "Ball Recovery"}}
+{"id": "m10", "query": "beating a defender one on one", "category": "semantic", "intent": {"event_type": "Dribble", "outcome": "Complete"}}
+{"id": "u01", "query": "clutch performances under pressure", "category": "subjective", "intent": {}}
+{"id": "u02", "query": "moments of individual brilliance", "category": "subjective", "intent": {}}
+{"id": "u03", "query": "dominant defensive displays", "category": "subjective", "intent": {}}
+{"id": "u04", "query": "aggressive pressing sequences", "category": "subjective", "intent": {}}
+{"id": "u05", "query": "composed finishing in tight spaces", "category": "subjective", "intent": {}}
+{"id": "u06", "query": "sloppy play leading to turnovers", "category": "subjective", "intent": {}}
+{"id": "u07", "query": "relentless attacking waves", "category": "subjective", "intent": {}}
+{"id": "u08", "query": "calm goalkeeping under threat", "category": "subjective", "intent": {}}
+{"id": "n01", "query": "offside goals in the 2010 world cup final", "category": "negative", "intent": {}, "expected_empty": true}
+{"id": "n02", "query": "penalty shootout saves in this match", "category": "negative", "intent": {}, "expected_empty": true}
+{"id": "n03", "query": "VAR overturns for handball", "category": "negative", "intent": {}, "expected_empty": true}
+{"id": "n04", "query": "goals scored by the goalkeeper", "category": "negative", "intent": {}, "expected_empty": true}
+{"id": "n05", "query": "red cards shown to the manager", "category": "negative", "intent": {}, "expected_empty": true}
